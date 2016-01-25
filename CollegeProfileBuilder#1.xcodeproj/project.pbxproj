@@ -14,6 +14,7 @@
 		3FE422AE1C4FF5AA0075B49A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FE422AC1C4FF5AA0075B49A /* LaunchScreen.storyboard */; };
 		3FE422B91C4FF5AA0075B49A /* CollegeProfileBuilder_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE422B81C4FF5AA0075B49A /* CollegeProfileBuilder_1Tests.swift */; };
 		3FE422C41C4FF5AA0075B49A /* CollegeProfileBuilder_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE422C31C4FF5AA0075B49A /* CollegeProfileBuilder_1UITests.swift */; };
+		3FE422D21C5692EA0075B49A /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE422D11C5692EA0075B49A /* City.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		3FE422BF1C4FF5AA0075B49A /* CollegeProfileBuilder#1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CollegeProfileBuilder#1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FE422C31C4FF5AA0075B49A /* CollegeProfileBuilder_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeProfileBuilder_1UITests.swift; sourceTree = "<group>"; };
 		3FE422C51C4FF5AA0075B49A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FE422D11C5692EA0075B49A /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				3FE422A31C4FF5AA0075B49A /* AppDelegate.swift */,
 				3FE422A51C4FF5AA0075B49A /* ViewController.swift */,
 				3FE422A71C4FF5AA0075B49A /* Main.storyboard */,
+				3FE422D11C5692EA0075B49A /* City.swift */,
 				3FE422AA1C4FF5AA0075B49A /* Assets.xcassets */,
 				3FE422AC1C4FF5AA0075B49A /* LaunchScreen.storyboard */,
 				3FE422AF1C4FF5AA0075B49A /* Info.plist */,
@@ -261,6 +264,7 @@
 			files = (
 				3FE422A61C4FF5AA0075B49A /* ViewController.swift in Sources */,
 				3FE422A41C4FF5AA0075B49A /* AppDelegate.swift in Sources */,
+				3FE422D21C5692EA0075B49A /* City.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
