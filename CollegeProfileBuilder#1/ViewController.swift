@@ -5,7 +5,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var editButton: UIBarButtonItem!
     
-    var cities = ["Chicago", "Denver", "Seattle", "Miami", "Milwaukee"]
+    var cities : [City] = []
 
     override func viewDidLoad()
     {
@@ -14,6 +14,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.dataSource = self
         tableView.delegate = self
         editButton.tag = 0
+        
+        cities.append(City(name: "Chicago", state: "Illinois", population: 2719000, image: UIImage(named: "chicagoFlag")!))
+        cities.append(City(name: "Denver", state: "Colorado", population: 649495, image: UIImage(named: "denverFlag")!))
+        cities.append(City(name: "Seattle", state: "Washington", population: 652405, image: UIImage(named: "seattleFlag")!))
+        cities.append(City(name: "Miami", state: "Florida", population: 417650, image: UIImage(named: "miamiFlag")!))
+        cities.append(City(name: "Milwaukee", state: "Wisconsin", population: 599164, image: UIImage(named: "milwaukeeFlag")!))
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
@@ -24,7 +30,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCellWithIdentifier("MyCell", forIndexPath: indexPath)
-        cell.textLabel?.text = cities[indexPath.row]
+        cell.textLabel?.text = cities[indexPath.row].name
         return cell
     }
     
@@ -51,7 +57,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         let addAction = UIAlertAction(title: "Add", style: .Default) { (ACTION) -> Void in
             let cityTextField = alert.textFields![0] as UITextField
-            self.cities.append(cityTextField.text!)
+            self.cities.append(City(name: cityTextField.text!))
             self.tableView.reloadData()
         }
         
