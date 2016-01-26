@@ -71,6 +71,57 @@
             </objects>
             <point key="canvasLocation" x="1100" y="295"/>
         </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="fGB-2f-6X6">
+            <objects>
+                <viewController id="7NG-uL-Oli" customClass="DetailViewController" customModule="CollegeProfileBuilder_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7lb-be-wzC"/>
+                        <viewControllerLayoutGuide type="bottom" id="2xq-8w-SbU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="o4Z-CY-aMT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yua-Z2-2PX">
+                                <rect key="frame" x="225" y="274" width="150" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Population" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JQg-fF-P8x">
+                                <rect key="frame" x="225" y="374" width="150" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hSz-Ko-xSF">
+                                <rect key="frame" x="175" y="103" width="250" height="150"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qnx-Fr-Gev">
+                                <rect key="frame" x="283" y="427" width="34" height="32"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="onTappedSaveButton:" destination="7NG-uL-Oli" eventType="touchUpInside" id="bjk-SO-ztI"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="State" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L3N-fP-g8V">
+                                <rect key="frame" x="225" y="325" width="150" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="cityTextField" destination="yua-Z2-2PX" id="bB0-AV-Upa"/>
+                        <outlet property="imageView" destination="hSz-Ko-xSF" id="dAq-wS-7a4"/>
+                        <outlet property="populationTextField" destination="JQg-fF-P8x" id="8NJ-Zl-6IZ"/>
+                        <outlet property="stateTextField" destination="L3N-fP-g8V" id="fVW-du-hVg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wj0-Wj-XFc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1743" y="295"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="dc5-Ss-8KX">
             <objects>
