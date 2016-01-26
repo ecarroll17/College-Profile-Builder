@@ -21,6 +21,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cities.append(City(name: "Miami", state: "Florida", population: 417650, image: UIImage(named: "miamiFlag")!))
         cities.append(City(name: "Milwaukee", state: "Wisconsin", population: 599164, image: UIImage(named: "milwaukeeFlag")!))
     }
+   
+    override func viewWillAppear(animated: Bool)
+    {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
