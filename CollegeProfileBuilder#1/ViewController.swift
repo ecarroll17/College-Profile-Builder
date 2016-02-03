@@ -5,7 +5,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var editButton: UIBarButtonItem!
     
-    var cities : [City] = []
+    var colleges : [College] = []
+   
 
     override func viewDidLoad()
     {
@@ -15,11 +16,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.delegate = self
         editButton.tag = 0
         
-        cities.append(City(name: "Chicago", state: "Illinois", population: 2719000, image: UIImage(named: "chicagoFlag")!))
-        cities.append(City(name: "Denver", state: "Colorado", population: 649495, image: UIImage(named: "denverFlag")!))
-        cities.append(City(name: "Seattle", state: "Washington", population: 652405, image: UIImage(named: "seattleFlag")!))
-        cities.append(City(name: "Miami", state: "Florida", population: 417650, image: UIImage(named: "miamiFlag")!))
-        cities.append(City(name: "Milwaukee", state: "Wisconsin", population: 599164, image: UIImage(named: "milwaukeeFlag")!))
+        colleges.append(College(name: "University of Illinois", state: "Illinois", numberOfStudents: 27000, image: UIImage(named: "illinois")!))
+        colleges.append(College(name: "McKendree University", state: "Illinois", numberOfStudents: 6495, image: UIImage(named: "mckendree")!))
+        colleges.append(College(name: "Penn State", state: "Philadelphia", numberOfStudents: 5205, image: UIImage(named: "pennState")!))
+        colleges.append(College(name: "Miami University", state: "Florida", numberOfStudents: 4650, image: UIImage(named: "miami")!))
+        colleges.append(College(name: "Milwaukee", state: "Wisconsin", numberOfStudents: 5164, image: UIImage(named: "milwaukee")!))
     }
    
     override func viewWillAppear(animated: Bool)
@@ -31,13 +32,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return cities.count
+        return colleges.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCellWithIdentifier("MyCell", forIndexPath: indexPath)
-        cell.textLabel?.text = cities[indexPath.row].name
+        cell.textLabel?.text = colleges[indexPath.row].name
+        cell.detailTextLabel?.text = colleges[indexPath.row].state
         return cell
     }
     
@@ -45,26 +47,28 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     {
         if editingStyle == .Delete
         {
-            cities.removeAtIndex(indexPath.row)
+            colleges.removeAtIndex(indexPath.row)
             tableView.reloadData()
         }
     }
     
     @IBAction func onTappedPlusButton(sender: UIBarButtonItem)
     {
-        let alert = UIAlertController(title: "Add City", message: nil, preferredStyle: .Alert)
+        let alert = UIAlertController(title: "Add College", message: nil, preferredStyle: .Alert)
        
         alert.addTextFieldWithConfigurationHandler { (textField) -> Void in
-            textField.placeholder = "Add City Here"
-        }
-        
+            textField.placeholder = "Add College Here"}
+        alert.addTextFieldWithConfigurationHandler { (textField) -> Void in
+            textField.placeholder = "Add State Here"}
+       
         let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
        
         alert.addAction(cancelAction)
         
         let addAction = UIAlertAction(title: "Add", style: .Default) { (ACTION) -> Void in
-            let cityTextField = alert.textFields![0] as UITextField
-            self.cities.append(City(name: cityTextField.text!))
+            let collegeTextField = alert.textFields![0] as UITextField
+            let stateTextField = alert.textFields![1] as UITextField
+            self.colleges.append(College(name: collegeTextField.text!, state: stateTextField.text!))
             self.tableView.reloadData()
         }
         
@@ -80,9 +84,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(tableView: UITableView, moveRowAtIndexPath sourceIndexPath: NSIndexPath, toIndexPath destinationIndexPath: NSIndexPath)
     {
-        let city = cities[sourceIndexPath.row]
-        cities.removeAtIndex(sourceIndexPath.row)
-        cities.insert(city, atIndex: destinationIndexPath.row)
+        let city = colleges[sourceIndexPath.row]
+        colleges.removeAtIndex(sourceIndexPath.row)
+        colleges.insert(city, atIndex: destinationIndexPath.row)
     }
     
     @IBAction func onTappedEditButton(sender: UIBarButtonItem)
@@ -101,7 +105,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     {
         let dvc = segue.destinationViewController as! DetailViewController
         let index = tableView.indexPathForSelectedRow?.row
-        dvc.city = cities[index!]
+        dvc.college = colleges[index!]
     }
 
 }
