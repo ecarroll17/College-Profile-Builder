@@ -16,11 +16,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.delegate = self
         editButton.tag = 0
         
-        colleges.append(College(name: "University of Illinois", state: "Illinois", numberOfStudents: 27000, image: UIImage(named: "illinois")!))
-        colleges.append(College(name: "McKendree University", state: "Illinois", numberOfStudents: 6495, image: UIImage(named: "mckendree")!))
-        colleges.append(College(name: "Penn State", state: "Philadelphia", numberOfStudents: 5205, image: UIImage(named: "pennState")!))
-        colleges.append(College(name: "Miami University", state: "Florida", numberOfStudents: 4650, image: UIImage(named: "miami")!))
-        colleges.append(College(name: "Milwaukee", state: "Wisconsin", numberOfStudents: 5164, image: UIImage(named: "milwaukee")!))
+        colleges.append(College(name: "University of Illinois", state: "Illinois", numberOfStudents: 27000, image: UIImage(named: "illinois")!, url: "http://illinois.edu"))
+        colleges.append(College(name: "McKendree University", state: "Illinois", numberOfStudents: 6495, image: UIImage(named: "mckendree")!, url: "https://www.mckendree.edu/#"))
+        colleges.append(College(name: "Penn State University", state: "Philadelphia", numberOfStudents: 5205, image: UIImage(named: "pennState")!, url: "http://www.psu.edu"))
+        colleges.append(College(name: "University of Miami", state: "Florida", numberOfStudents: 4650, image: UIImage(named: "miami")!, url: "http://welcome.miami.edu"))
+        colleges.append(College(name: "University of Wisconsin, Milwaukee", state: "Wisconsin", numberOfStudents: 5164, image: UIImage(named: "milwaukee")!, url: "http://www4.uwm.edu"))
     }
    
     override func viewWillAppear(animated: Bool)
@@ -60,6 +60,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             textField.placeholder = "Add College Here"}
         alert.addTextFieldWithConfigurationHandler { (textField) -> Void in
             textField.placeholder = "Add State Here"}
+        alert.addTextFieldWithConfigurationHandler { (textField) -> Void in
+            textField.placeholder = "Add Website Here"}
        
         let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
        

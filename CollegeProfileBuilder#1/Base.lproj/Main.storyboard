@@ -90,24 +90,24 @@
                         <viewControllerLayoutGuide type="bottom" id="2xq-8w-SbU"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="o4Z-CY-aMT">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hSz-Ko-xSF">
-                                <rect key="frame" x="91" y="97" width="250" height="150"/>
+                                <rect key="frame" x="62" y="97" width="250" height="150"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="College" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yua-Z2-2PX" userLabel="College Text Field">
-                                <rect key="frame" x="225" y="276" width="150" height="30"/>
+                                <rect key="frame" x="112" y="275" width="150" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="State" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L3N-fP-g8V">
-                                <rect key="frame" x="225" y="325" width="150" height="30"/>
+                                <rect key="frame" x="112" y="326" width="150" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qnx-Fr-Gev">
-                                <rect key="frame" x="280" y="426" width="40" height="32"/>
+                                <rect key="frame" x="167" y="459" width="40" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Save"/>
                                 <connections>
@@ -115,9 +115,21 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number of Students" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JQg-fF-P8x">
-                                <rect key="frame" x="225" y="374" width="150" height="30"/>
+                                <rect key="frame" x="112" y="374" width="150" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9d-AP-gHs">
+                                <rect key="frame" x="140" y="505" width="95" height="30"/>
+                                <state key="normal" title="Go to website"/>
+                                <connections>
+                                    <action selector="websiteButtonTapped:" destination="7NG-uL-Oli" eventType="touchUpInside" id="9mB-yV-GA3"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Website" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UnX-Pa-MdE">
+                                <rect key="frame" x="112" y="421" width="150" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -126,13 +138,17 @@
                             <constraint firstItem="L3N-fP-g8V" firstAttribute="centerX" secondItem="o4Z-CY-aMT" secondAttribute="centerX" id="5o1-ng-EPx"/>
                             <constraint firstItem="yua-Z2-2PX" firstAttribute="centerX" secondItem="o4Z-CY-aMT" secondAttribute="centerX" id="R33-3f-XaA"/>
                             <constraint firstItem="JQg-fF-P8x" firstAttribute="centerX" secondItem="o4Z-CY-aMT" secondAttribute="centerX" id="Tki-eE-mDh"/>
+                            <constraint firstItem="UnX-Pa-MdE" firstAttribute="centerX" secondItem="o4Z-CY-aMT" secondAttribute="centerX" id="XBE-0Y-rc9"/>
+                            <constraint firstItem="u9d-AP-gHs" firstAttribute="centerX" secondItem="o4Z-CY-aMT" secondAttribute="centerX" id="kIk-CM-GnO"/>
                         </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="collegeTextField" destination="yua-Z2-2PX" id="EEQ-Dq-xcW"/>
                         <outlet property="imageView" destination="hSz-Ko-xSF" id="dAq-wS-7a4"/>
                         <outlet property="numberOfStudentsTextField" destination="JQg-fF-P8x" id="VRU-PJ-OCm"/>
                         <outlet property="stateTextField" destination="L3N-fP-g8V" id="fVW-du-hVg"/>
+                        <outlet property="websiteTextField" destination="UnX-Pa-MdE" id="Iri-EK-cif"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wj0-Wj-XFc" userLabel="First Responder" sceneMemberID="firstResponder"/>
