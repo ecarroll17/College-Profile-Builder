@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3FE4229F1C4FF5AA0075B49A"
-               BuildableName = "CollegeProfileBuilder#1.app"
-               BlueprintName = "CollegeProfileBuilder#1"
-               ReferencedContainer = "container:CollegeProfileBuilder#1.xcodeproj">
+               BuildableName = "CollegeProfileBuilder.app"
+               BlueprintName = "CollegeProfileBuilder"
+               ReferencedContainer = "container:CollegeProfileBuilder.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3FE422B31C4FF5AA0075B49A"
-               BuildableName = "CollegeProfileBuilder#1Tests.xctest"
-               BlueprintName = "CollegeProfileBuilder#1Tests"
-               ReferencedContainer = "container:CollegeProfileBuilder#1.xcodeproj">
+               BuildableName = "CollegeProfileBuilder.xctest"
+               BlueprintName = "CollegeProfileBuilderTests"
+               ReferencedContainer = "container:CollegeProfileBuilder.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3FE422BE1C4FF5AA0075B49A"
-               BuildableName = "CollegeProfileBuilder#1UITests.xctest"
-               BlueprintName = "CollegeProfileBuilder#1UITests"
-               ReferencedContainer = "container:CollegeProfileBuilder#1.xcodeproj">
+               BuildableName = "CollegeProfileBuilder.xctest"
+               BlueprintName = "CollegeProfileBuilderUITests"
+               ReferencedContainer = "container:CollegeProfileBuilder.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3FE4229F1C4FF5AA0075B49A"
-            BuildableName = "CollegeProfileBuilder#1.app"
-            BlueprintName = "CollegeProfileBuilder#1"
-            ReferencedContainer = "container:CollegeProfileBuilder#1.xcodeproj">
+            BuildableName = "CollegeProfileBuilder.app"
+            BlueprintName = "CollegeProfileBuilder"
+            ReferencedContainer = "container:CollegeProfileBuilder.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3FE4229F1C4FF5AA0075B49A"
-            BuildableName = "CollegeProfileBuilder#1.app"
-            BlueprintName = "CollegeProfileBuilder#1"
-            ReferencedContainer = "container:CollegeProfileBuilder#1.xcodeproj">
+            BuildableName = "CollegeProfileBuilder.app"
+            BlueprintName = "CollegeProfileBuilder"
+            ReferencedContainer = "container:CollegeProfileBuilder.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3FE4229F1C4FF5AA0075B49A"
-            BuildableName = "CollegeProfileBuilder#1.app"
-            BlueprintName = "CollegeProfileBuilder#1"
-            ReferencedContainer = "container:CollegeProfileBuilder#1.xcodeproj">
+            BuildableName = "CollegeProfileBuilder.app"
+            BlueprintName = "CollegeProfileBuilder"
+            ReferencedContainer = "container:CollegeProfileBuilder.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -36,17 +36,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3FE422A01C4FF5AA0075B49A /* CollegeProfileBuilder#1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CollegeProfileBuilder#1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FE422A01C4FF5AA0075B49A /* CollegeProfileBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollegeProfileBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FE422A31C4FF5AA0075B49A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FE422A51C4FF5AA0075B49A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3FE422A81C4FF5AA0075B49A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3FE422AA1C4FF5AA0075B49A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FE422AD1C4FF5AA0075B49A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FE422AF1C4FF5AA0075B49A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3FE422B41C4FF5AA0075B49A /* CollegeProfileBuilder#1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CollegeProfileBuilder#1Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FE422B41C4FF5AA0075B49A /* CollegeProfileBuilder.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollegeProfileBuilder.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FE422B81C4FF5AA0075B49A /* CollegeProfileBuilder_1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeProfileBuilder_1Tests.swift; sourceTree = "<group>"; };
 		3FE422BA1C4FF5AA0075B49A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3FE422BF1C4FF5AA0075B49A /* CollegeProfileBuilder#1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CollegeProfileBuilder#1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FE422BF1C4FF5AA0075B49A /* CollegeProfileBuilder.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollegeProfileBuilder.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FE422C31C4FF5AA0075B49A /* CollegeProfileBuilder_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeProfileBuilder_1UITests.swift; sourceTree = "<group>"; };
 		3FE422C51C4FF5AA0075B49A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FE422D31C57DDFA0075B49A /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -91,9 +91,9 @@
 		3FE422A11C4FF5AA0075B49A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3FE422A01C4FF5AA0075B49A /* CollegeProfileBuilder#1.app */,
-				3FE422B41C4FF5AA0075B49A /* CollegeProfileBuilder#1Tests.xctest */,
-				3FE422BF1C4FF5AA0075B49A /* CollegeProfileBuilder#1UITests.xctest */,
+				3FE422A01C4FF5AA0075B49A /* CollegeProfileBuilder.app */,
+				3FE422B41C4FF5AA0075B49A /* CollegeProfileBuilder.xctest */,
+				3FE422BF1C4FF5AA0075B49A /* CollegeProfileBuilder.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,9 +134,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3FE4229F1C4FF5AA0075B49A /* CollegeProfileBuilder#1 */ = {
+		3FE4229F1C4FF5AA0075B49A /* CollegeProfileBuilder */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3FE422C81C4FF5AA0075B49A /* Build configuration list for PBXNativeTarget "CollegeProfileBuilder#1" */;
+			buildConfigurationList = 3FE422C81C4FF5AA0075B49A /* Build configuration list for PBXNativeTarget "CollegeProfileBuilder" */;
 			buildPhases = (
 				3FE4229C1C4FF5AA0075B49A /* Sources */,
 				3FE4229D1C4FF5AA0075B49A /* Frameworks */,
@@ -146,14 +146,14 @@
 			);
 			dependencies = (
 			);
-			name = "CollegeProfileBuilder#1";
+			name = CollegeProfileBuilder;
 			productName = "CollegeProfileBuilder#1";
-			productReference = 3FE422A01C4FF5AA0075B49A /* CollegeProfileBuilder#1.app */;
+			productReference = 3FE422A01C4FF5AA0075B49A /* CollegeProfileBuilder.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3FE422B31C4FF5AA0075B49A /* CollegeProfileBuilder#1Tests */ = {
+		3FE422B31C4FF5AA0075B49A /* CollegeProfileBuilderTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3FE422CB1C4FF5AA0075B49A /* Build configuration list for PBXNativeTarget "CollegeProfileBuilder#1Tests" */;
+			buildConfigurationList = 3FE422CB1C4FF5AA0075B49A /* Build configuration list for PBXNativeTarget "CollegeProfileBuilderTests" */;
 			buildPhases = (
 				3FE422B01C4FF5AA0075B49A /* Sources */,
 				3FE422B11C4FF5AA0075B49A /* Frameworks */,
@@ -164,14 +164,14 @@
 			dependencies = (
 				3FE422B61C4FF5AA0075B49A /* PBXTargetDependency */,
 			);
-			name = "CollegeProfileBuilder#1Tests";
+			name = CollegeProfileBuilderTests;
 			productName = "CollegeProfileBuilder#1Tests";
-			productReference = 3FE422B41C4FF5AA0075B49A /* CollegeProfileBuilder#1Tests.xctest */;
+			productReference = 3FE422B41C4FF5AA0075B49A /* CollegeProfileBuilder.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		3FE422BE1C4FF5AA0075B49A /* CollegeProfileBuilder#1UITests */ = {
+		3FE422BE1C4FF5AA0075B49A /* CollegeProfileBuilderUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3FE422CE1C4FF5AA0075B49A /* Build configuration list for PBXNativeTarget "CollegeProfileBuilder#1UITests" */;
+			buildConfigurationList = 3FE422CE1C4FF5AA0075B49A /* Build configuration list for PBXNativeTarget "CollegeProfileBuilderUITests" */;
 			buildPhases = (
 				3FE422BB1C4FF5AA0075B49A /* Sources */,
 				3FE422BC1C4FF5AA0075B49A /* Frameworks */,
@@ -182,9 +182,9 @@
 			dependencies = (
 				3FE422C11C4FF5AA0075B49A /* PBXTargetDependency */,
 			);
-			name = "CollegeProfileBuilder#1UITests";
+			name = CollegeProfileBuilderUITests;
 			productName = "CollegeProfileBuilder#1UITests";
-			productReference = 3FE422BF1C4FF5AA0075B49A /* CollegeProfileBuilder#1UITests.xctest */;
+			productReference = 3FE422BF1C4FF5AA0075B49A /* CollegeProfileBuilder.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -213,7 +213,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3FE4229B1C4FF5AA0075B49A /* Build configuration list for PBXProject "CollegeProfileBuilder#1" */;
+			buildConfigurationList = 3FE4229B1C4FF5AA0075B49A /* Build configuration list for PBXProject "CollegeProfileBuilder" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -226,9 +226,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3FE4229F1C4FF5AA0075B49A /* CollegeProfileBuilder#1 */,
-				3FE422B31C4FF5AA0075B49A /* CollegeProfileBuilder#1Tests */,
-				3FE422BE1C4FF5AA0075B49A /* CollegeProfileBuilder#1UITests */,
+				3FE4229F1C4FF5AA0075B49A /* CollegeProfileBuilder */,
+				3FE422B31C4FF5AA0075B49A /* CollegeProfileBuilderTests */,
+				3FE422BE1C4FF5AA0075B49A /* CollegeProfileBuilderUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -293,12 +293,12 @@
 /* Begin PBXTargetDependency section */
 		3FE422B61C4FF5AA0075B49A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3FE4229F1C4FF5AA0075B49A /* CollegeProfileBuilder#1 */;
+			target = 3FE4229F1C4FF5AA0075B49A /* CollegeProfileBuilder */;
 			targetProxy = 3FE422B51C4FF5AA0075B49A /* PBXContainerItemProxy */;
 		};
 		3FE422C11C4FF5AA0075B49A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3FE4229F1C4FF5AA0075B49A /* CollegeProfileBuilder#1 */;
+			target = 3FE4229F1C4FF5AA0075B49A /* CollegeProfileBuilder */;
 			targetProxy = 3FE422C01C4FF5AA0075B49A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -413,7 +413,7 @@
 				INFOPLIST_FILE = "CollegeProfileBuilder#1/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ecarroll.CollegeProfileBuilder-1";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CollegeProfileBuilder;
 			};
 			name = Debug;
 		};
@@ -424,7 +424,7 @@
 				INFOPLIST_FILE = "CollegeProfileBuilder#1/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ecarroll.CollegeProfileBuilder-1";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CollegeProfileBuilder;
 			};
 			name = Release;
 		};
@@ -435,8 +435,8 @@
 				INFOPLIST_FILE = "CollegeProfileBuilder#1Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ecarroll.CollegeProfileBuilder-1Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CollegeProfileBuilder#1.app/CollegeProfileBuilder#1";
+				PRODUCT_NAME = CollegeProfileBuilder;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CollegeProfileBuilder.app/CollegeProfileBuilder";
 			};
 			name = Debug;
 		};
@@ -447,8 +447,8 @@
 				INFOPLIST_FILE = "CollegeProfileBuilder#1Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ecarroll.CollegeProfileBuilder-1Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CollegeProfileBuilder#1.app/CollegeProfileBuilder#1";
+				PRODUCT_NAME = CollegeProfileBuilder;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CollegeProfileBuilder.app/CollegeProfileBuilder";
 			};
 			name = Release;
 		};
@@ -458,7 +458,7 @@
 				INFOPLIST_FILE = "CollegeProfileBuilder#1UITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ecarroll.CollegeProfileBuilder-1UITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CollegeProfileBuilder;
 				TEST_TARGET_NAME = "CollegeProfileBuilder#1";
 				USES_XCTRUNNER = YES;
 			};
@@ -470,7 +470,7 @@
 				INFOPLIST_FILE = "CollegeProfileBuilder#1UITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ecarroll.CollegeProfileBuilder-1UITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CollegeProfileBuilder;
 				TEST_TARGET_NAME = "CollegeProfileBuilder#1";
 				USES_XCTRUNNER = YES;
 			};
@@ -479,7 +479,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3FE4229B1C4FF5AA0075B49A /* Build configuration list for PBXProject "CollegeProfileBuilder#1" */ = {
+		3FE4229B1C4FF5AA0075B49A /* Build configuration list for PBXProject "CollegeProfileBuilder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3FE422C61C4FF5AA0075B49A /* Debug */,
@@ -488,29 +488,32 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3FE422C81C4FF5AA0075B49A /* Build configuration list for PBXNativeTarget "CollegeProfileBuilder#1" */ = {
+		3FE422C81C4FF5AA0075B49A /* Build configuration list for PBXNativeTarget "CollegeProfileBuilder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3FE422C91C4FF5AA0075B49A /* Debug */,
 				3FE422CA1C4FF5AA0075B49A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		3FE422CB1C4FF5AA0075B49A /* Build configuration list for PBXNativeTarget "CollegeProfileBuilder#1Tests" */ = {
+		3FE422CB1C4FF5AA0075B49A /* Build configuration list for PBXNativeTarget "CollegeProfileBuilderTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3FE422CC1C4FF5AA0075B49A /* Debug */,
 				3FE422CD1C4FF5AA0075B49A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		3FE422CE1C4FF5AA0075B49A /* Build configuration list for PBXNativeTarget "CollegeProfileBuilder#1UITests" */ = {
+		3FE422CE1C4FF5AA0075B49A /* Build configuration list for PBXNativeTarget "CollegeProfileBuilderUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3FE422CF1C4FF5AA0075B49A /* Debug */,
 				3FE422D01C4FF5AA0075B49A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -131,14 +131,40 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZw-3Q-3pj">
+                                <rect key="frame" x="20" y="558" width="150" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Camera">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cameraButtonTapped:" destination="7NG-uL-Oli" eventType="touchUpInside" id="I7k-86-Jrv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hfd-BJ-s9w">
+                                <rect key="frame" x="205" y="558" width="150" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Photos">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="photoButtonTapped:" destination="7NG-uL-Oli" eventType="touchUpInside" id="ULs-Pk-xpT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="qnx-Fr-Gev" firstAttribute="centerX" secondItem="o4Z-CY-aMT" secondAttribute="centerX" id="1PW-Sv-hOR"/>
                             <constraint firstItem="L3N-fP-g8V" firstAttribute="centerX" secondItem="o4Z-CY-aMT" secondAttribute="centerX" id="5o1-ng-EPx"/>
+                            <constraint firstItem="Hfd-BJ-s9w" firstAttribute="trailing" secondItem="o4Z-CY-aMT" secondAttribute="trailingMargin" id="HCt-Ci-koO"/>
+                            <constraint firstItem="Hfd-BJ-s9w" firstAttribute="width" secondItem="gZw-3Q-3pj" secondAttribute="width" id="QHJ-ge-nsm"/>
                             <constraint firstItem="yua-Z2-2PX" firstAttribute="centerX" secondItem="o4Z-CY-aMT" secondAttribute="centerX" id="R33-3f-XaA"/>
+                            <constraint firstItem="2xq-8w-SbU" firstAttribute="top" secondItem="Hfd-BJ-s9w" secondAttribute="bottom" id="S03-0T-2c0"/>
                             <constraint firstItem="JQg-fF-P8x" firstAttribute="centerX" secondItem="o4Z-CY-aMT" secondAttribute="centerX" id="Tki-eE-mDh"/>
                             <constraint firstItem="UnX-Pa-MdE" firstAttribute="centerX" secondItem="o4Z-CY-aMT" secondAttribute="centerX" id="XBE-0Y-rc9"/>
+                            <constraint firstItem="2xq-8w-SbU" firstAttribute="top" secondItem="gZw-3Q-3pj" secondAttribute="bottom" id="Xe8-0L-uMK"/>
+                            <constraint firstItem="gZw-3Q-3pj" firstAttribute="leading" secondItem="o4Z-CY-aMT" secondAttribute="leadingMargin" id="b5b-37-fkf" userLabel="Camera.leading = leadingMargin "/>
+                            <constraint firstItem="Hfd-BJ-s9w" firstAttribute="leading" secondItem="gZw-3Q-3pj" secondAttribute="trailing" id="b5d-ET-eKf"/>
                             <constraint firstItem="u9d-AP-gHs" firstAttribute="centerX" secondItem="o4Z-CY-aMT" secondAttribute="centerX" id="kIk-CM-GnO"/>
                         </constraints>
                     </view>
@@ -153,7 +179,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wj0-Wj-XFc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1864" y="295"/>
+            <point key="canvasLocation" x="1863.5" y="294.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dc5-Ss-8KX">
